@@ -7,7 +7,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: 0;
+    z-index: -999;
     
     /* 添加底部向上渐变遮罩 */
     -webkit-mask-image: linear-gradient(to top, transparent 0%, black 0%);
@@ -21,7 +21,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
+    pointer-events: none;
     /* 添加透明度过渡 */
     transition: opacity 0.5s ease;
     opacity: 1;
